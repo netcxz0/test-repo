@@ -1,0 +1,47 @@
+{
+ "properties": {
+  "displayName": "Enforce-Resouce-Tags",
+  "policyType": "Custom",
+  "metadata": {
+   "category": "Tags",
+   "version": "1.0.0",
+   "createdBy": "775da3ca-c42c-4377-a7ee-cc86ed16520c",
+   "createdOn": "2023-03-06T21:52:35.0889745Z",
+   "updatedBy": null,
+   "updatedOn": null
+  },
+  "parameters": {},
+  "policyDefinitions": [
+   {
+    "policyDefinitionReferenceId": "Require a tag and its value on resources_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/1e30110a-5ceb-460c-a204-c1c3969c6d62",
+    "parameters": {
+     "tagName": {
+      "value": "Environment"
+     },
+     "tagValue": {
+      "value": "Development"
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Require a tag and its value on resource groups_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/8ce3da23-7156-49e4-b145-24f95f9dcb46",
+    "parameters": {
+     "tagName": {
+      "value": "Environment"
+     },
+     "tagValue": {
+      "value": "Development"
+     }
+    },
+    "groupNames": []
+   }
+  ],
+  "policyDefinitionGroups": []
+ },
+ "id": "/providers/Microsoft.Management/managementGroups/hasbroalz/providers/Microsoft.Authorization/policySetDefinitions/3741e9ec04fa4b489a085e8b",
+ "type": "Microsoft.Authorization/policySetDefinitions",
+ "name": "3741e9ec04fa4b489a085e8b"
+}
